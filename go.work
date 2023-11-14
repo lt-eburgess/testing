@@ -2,6 +2,6 @@ go 1.21.4
 
 use (
   ./cmd
-  ./weather-testing-go
-  ./zipcode-testing-go
+  ./weather
+  ./zipcode
 )
