@@ -3,8 +3,9 @@ package main
 import (
 	"fmt"
 	"log"
-	"weather"
-	"zipcodes"
+
+	"github.com/lt-eburgess/testing/internal/weather"
+	"github.com/lt-eburgess/testing/internal/zipcodes"
 )
 
 func main() {
@@ -12,7 +13,7 @@ func main() {
 	input := "94088"
 	forecast := true
 
-	valid, err := zipcodes.ZipcodeIsValid(input)
+	valid, err := zipcodes.ZipcodeIsValid.ZipcodeIsValid(input)
 	if !valid && err != nil {
 		log.Print(err)
 	} else {
