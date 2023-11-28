@@ -13,7 +13,7 @@ func main() {
 	input := "94088"
 	forecast := true
 
-	valid, err := zipcodes.ZipcodeIsValid.ZipcodeIsValid(input)
+	valid, err := zipcodes.ZipcodeIsValid(input)
 	if !valid && err != nil {
 		log.Print(err)
 	} else {
